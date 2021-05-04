@@ -1,0 +1,13 @@
+url https://apod.nasa.gov/apod/
+no_update False
+force_update False
+random False
+date 
+image_name apod
+response_file response.txt
+save_response False
+save_only False
+set_bg_cmd feh --bg-fill
+#set_bg_cmd xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/image-style -s 5; xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s
+apod_last_file 
+verbose False
