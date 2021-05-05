@@ -76,6 +76,16 @@ class pyOptions:
         return retval
 
 
+    def getDefaultOption(self,option_name):
+        retval = None
+
+        for opt in self.__options:
+            if opt[0].lower() == option_name.lower():
+                retval = opt[4]
+
+        return retval
+
+
     def setOption(self,option_name,value):
         value_set = False
 
