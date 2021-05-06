@@ -2,7 +2,7 @@ import sys
 import os
 import getopt
 
-from incl.fileIO import *
+from incl.file_io import *
 from incl.logging import *
 
 class pyOptions:
