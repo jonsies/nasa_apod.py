@@ -23,7 +23,7 @@ from incl.help_info import *
 
 
 logger = None
-script_version = ".056"
+script_version = ".057"
 
 
 def getRandomDate(floor_date,ceil_date=""):
@@ -187,8 +187,8 @@ def setWallpaper(image_file,set_bg_cmd):
             winreg.SetValueEx(reg_key,"Wallpaper",0,
                 winreg.REG_SZ,full_path)
             winreg.CloseKey(reg_key)
-            logger.logMessage("{}\DESKTOP WALLPAPER KEY".format(
-                "UPDATING HKCU\CONTROL PANEL"))
+            logger.logMessage("{}\\DESKTOP WALLPAPER KEY".format(
+                "UPDATING HKCU\\CONTROL PANEL"))
         except WindowsError:
             logger.showError("{}: {} registry key".format(
                 "Error Occurred","Windows error on setting"))
@@ -211,7 +211,7 @@ def main():
 
     apod_floor_date = "19950620"
     apod_page_ext = "html"
-    apod_regex_pattern = "href=\"image.+?\..{3}"
+    apod_regex_pattern = "href=\"image.+?\\..{3}"
     apod_regex_lstrip = "href=\""
     apod_regex_rstrip = ""
 
